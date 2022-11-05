@@ -1,0 +1,180 @@
+
+body{
+    height: 100%;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.masterContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(233, 162, 173);
+  flex-wrap:wrap;
+  width: 100%;
+}
+
+.top-1{
+    display:none
+}
+
+
+.top-2{
+   font-size: 10px;
+   line-height: 6px;
+   align-self: center;
+}
+
+.top-2 h1 {
+    margin-left: 70px;
+}
+
+.top-3 {
+    align-self: center;
+    padding-right: 10px;
+    width: 50px;
+}
+
+.topNav{
+    margin-top: 2px;
+}
+
+.navList{
+    border: solid 1px black ;
+    background-color: rgb(233, 162, 173);
+    border-radius: 5px;
+    display: flex;
+}
+
+.topNav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.topNav ul li{
+    font-size: 17px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.topNav ul li:nth-child(4) {
+    margin-right: 0px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navList a.active {
+     text-decoration: underline;
+  }
+
+.navList li a:hover {
+    background-color: rgb(243, 193, 157);
+    color: black;
+  }
+
+
+
+.mainContentArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.mainInfo h1{
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.underWelcome p{
+    max-width:40ch;
+    word-spacing: 5px;
+}
+
+.mainInfo-2 p{
+    max-width: 40ch;
+    word-spacing: 5px;
+}
+
+.tagLine{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 135px;
+}
+
+
+.bottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(233, 162, 173);
+}
+
+.bottomLeft{
+    align-self: center;
+}
+
+.bottomLeft img{
+    padding: 2px;
+}
+
+.bottomRight img{
+ 
+ padding-right: 4px;
+}
+
+@media (min-width: 375px){
+    .top-1{
+        align-self: center;
+        display: block;
+    }
+
+    .top-2 h1 {
+        margin-left: 0px
+       
+    }
+    
+}
+
+/* check height on body if anything breaks  */
+/* html, body, main{ 
+    height: 100%
+}
+
+/* .mainContentArea margin */
+
+/* body {
+    padding
+    margin
+    border
+}
+
+/* The big issue is the main going under footer when I make browser small vertically */
