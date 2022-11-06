@@ -1,12 +1,22 @@
-
-body{
+html {
     height: 100%;
-    background-color: white;
+
+}
+
+body {
+    height: 100vh;
     margin: 0%;
     padding: 0%;
     border: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+
+}
+
+main {
+    min-height: 86.5vh;
+    background-image: url(./images/bgimg5.PNG);
+    background-position: cover;
+    background-repeat: repeat
 }
 
 .masterContainer {
@@ -18,27 +28,28 @@ body{
     border: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-wrap: wrap;
-    height: 100%;
+    width: 100%;
 }
 
 .topContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(233, 162, 173);
-  flex-wrap:wrap;
-  width: 100%;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(233, 162, 173);
+    flex-wrap: wrap;
 
-.top-1{
-    display:none
 }
 
 
-.top-2{
-   font-size: 10px;
-   line-height: 6px;
-   align-self: center;
+.top-1 {
+    display: none
+}
+
+
+.top-2 {
+    font-size: 10px;
+    line-height: 6px;
+    align-self: center;
 }
 
 .top-2 h1 {
@@ -51,12 +62,21 @@ body{
     width: 50px;
 }
 
-.topNav{
-    margin-top: 2px;
+.phone {
+    font-size: small;
+
 }
 
-.navList{
-    border: solid 1px black ;
+/* possible work area */
+
+.topNav {
+    margin-top: 2px;
+    width: fit-content;
+    align-self: center;
+}
+
+.navList {
+    border: solid 1px black;
     background-color: rgb(233, 162, 173);
     border-radius: 5px;
     display: flex;
@@ -68,7 +88,7 @@ body{
     padding: 0%;
 }
 
-.topNav ul li{
+.topNav ul li {
     font-size: 17px;
     padding-left: 4px;
     padding-right: 4px;
@@ -81,54 +101,149 @@ body{
     margin-right: 0px;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
 .navList a.active {
-     text-decoration: underline;
-  }
+    text-decoration: underline;
+}
 
 .navList li a:hover {
     background-color: rgb(243, 193, 157);
     color: black;
-  }
-
-
-
-.mainContentArea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1px; 
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 
+/*  possible work area */
 
-.mainInfo h1{
+
+
+/* Work area */
+
+
+
+.mainInfo h1 {
     margin-top: 50px;
     font-size: 2rem;
     text-align: center;
 }
 
-.underWelcome p{
-    max-width:40ch;
-    word-spacing: 5px;
-}
-
-.mainInfo-2 p{
+.underWelcome p {
+    background-color: rgba(243, 193, 157, .4);
+    border-radius: 5px;
     max-width: 40ch;
     word-spacing: 5px;
+    font-weight: bold;
 }
 
-.tagLine{
+.mainInfo-2 p {
+    max-width: 40ch;
+    word-spacing: 5px;
+    font-weight: bold;
+    background-color: rgba(243, 193, 157, .4);
+    border-radius: 5px;
+}
+
+.oldStore {
+    height: 250px;
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 2px black;
+}
+
+.tagLine {
     text-align: center;
     font-style: italic;
-    margin-bottom: 135px;
+
 }
+
+.mainContentArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.column-1 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    display: none;
+}
+
+.column-1 .leftNav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.column-1 .leftNav ul {
+    padding-left: 0%;
+    padding-top: 65px;
+}
+
+.leftNav ul li {
+    border: 2px black solid;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+.leftNav ul li>a {
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.leftNav ul li>a:hover {
+    opacity: 1;
+    color: white;
+    font-weight: bolder;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bgHome {
+    background-image: url(./images/homeImg.PNG);
+    background-position: center;
+}
+
+.bgApples {
+    background-image: url(./images/appleBG.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.bgCiders {
+    background-image: url(./images/ciderBG2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bgJuices {
+    background-image: url(./images/juiceBG.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* work area */
+
+
+
+
 
 
 .bottomContainer {
@@ -138,31 +253,58 @@ a{
     background-color: rgb(233, 162, 173);
 }
 
-.bottomLeft{
+.bottomLeft {
     align-self: center;
 }
 
-.bottomLeft img{
+.bottomLeft img {
     padding: 2px;
 }
 
-.bottomRight img{
- 
- padding-right: 4px;
+.bottomRight img {
+
+    padding-right: 4px;
 }
 
-@media (min-width: 375px){
-    .top-1{
+
+/* Media Queries */
+
+@media (min-width: 375px) {
+    .top-1 {
         align-self: center;
         display: block;
     }
 
     .top-2 h1 {
         margin-left: 0px
-       
     }
-    
+
+
 }
+
+@media (min-width: 767px) {
+
+    .topNav {
+        visibility: hidden;
+    }
+
+
+
+    .column-1 {
+        display: flex;
+
+
+
+    }
+
+    .column-3 {
+        padding-left: 60px;
+    }
+}
+
+
+
+
 
 /* check height on body if anything breaks  */
 /* html, body, main{ 
@@ -176,5 +318,4 @@ a{
     margin
     border
 }
-
 /* The big issue is the main going under footer when I make browser small vertically */
