@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-body{
+body {
     height: 100vh;
     margin: 0%;
     padding: 0%;
@@ -65,8 +65,6 @@ main {
 
 }
 
-/* possible work area */
-
 .topNav {
     margin-top: 2px;
     width: fit-content;
@@ -112,15 +110,6 @@ a {
     background-color: rgb(243, 193, 157);
     color: black;
 }
-
-
-/*  possible work area */
-
-
-
-/* Work area */
-
-
 
 .mainInfo h1 {
     margin-top: 50px;
@@ -179,6 +168,8 @@ a {
 }
 
 
+
+
 .column-1 .leftNav ul {
     padding-left: 0%;
     padding-top: 65px;
@@ -230,13 +221,11 @@ a {
 }
 
 .bgJuices {
-    background-image: url(./images/juiceBG.PNG);
+    background-image: url(./images/jamBG.PNG);
     background-position: center;
     background-size: cover;
 }
 
-
-/* work area */
 
 
 
@@ -267,23 +256,23 @@ a {
 /* apples page specific css */
 
 .column-3 {
-   display: none;
+    display: none;
 }
 
-.photoItems{
+.photoItems {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.photoItems-2{
+.photoItems-2 {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 
-.apple-1 img{
+.apple-1 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
@@ -291,11 +280,11 @@ a {
     box-shadow: 2px 2px 2px 2px black;
 }
 
-.apple-1 h3{
+.apple-1 h3 {
     text-align: center;
 }
 
-.apple-1Text p{
+.apple-1Text p {
     text-align: center;
     width: 164px;
     background-color: rgb(233, 162, 173);
@@ -306,7 +295,7 @@ a {
 }
 
 
-.apple-2 img{
+.apple-2 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
@@ -314,11 +303,11 @@ a {
     box-shadow: 2px 2px 2px 2px black;
 }
 
-.apple-2 h3{
+.apple-2 h3 {
     text-align: center;
 }
 
-.apple-2Text p{
+.apple-2Text p {
     text-align: center;
     width: 164px;
     background-color: rgb(233, 162, 173);
@@ -331,7 +320,7 @@ a {
 
 
 
-.apple-3 img{
+.apple-3 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
@@ -339,48 +328,80 @@ a {
     box-shadow: 2px 2px 2px 2px black;
 }
 
-.apple-3 h3{
+.apple-3 h3 {
     text-align: center;
 }
 
-.apple-4 img{
+.apple-4 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px black;
-    
+
 }
 
-.apple-4 h3{
+.apple-4 h3 {
     text-align: center;
 }
 
-.apple-5 img{
+.apple-5 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px black;
-    
+
 }
 
-.apple-5 h3{
+.apple-5 h3 {
     text-align: center;
 }
 
-.apple-6 img{
+.apple-6 img {
     height: 200px;
     width: 164px;
     border: rgb(233, 162, 173) solid 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px black;
-    
+
 }
 
-.apple-6 h3{
+.apple-6 h3 {
     text-align: center;
 }
+
+/* Jam css */
+
+.photoItems {
+    align-self: center;
+}
+
+
+.jam-1 img {
+    height: 250px;
+    width: 200px;
+    border: rgb(233, 162, 173) solid 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+.jam-1 h3 {
+    text-align: center;
+}
+
+.jam-1Text p {
+    text-align: center;
+    width: 200px;
+    background-color: rgb(233, 162, 173);
+    border-radius: 5px;
+    border: solid 1px black;
+    margin: 4px;
+    box-shadow: 1px 1px 1px black;
+
+}
+
 
 
 /* sticky footer test 
@@ -409,11 +430,11 @@ footer{
 @media (min-width: 767px) {
 
     .topNav {
-      display: none;
+        display: none;
     }
 
     .mainContentArea {
-     justify-content:space-between
+        justify-content: space-between
     }
 
     .column-1 {
@@ -427,31 +448,27 @@ footer{
         visibility: hidden;
     }
 
-    .photoItems{
+    .photoItems {
         display: flex;
         flex-direction: row;
-       
+
     }
-    
-    .photoItems-2{
+
+    .photoItems-2 {
         display: flex;
         flex-direction: row;
     }
-    
+
 }
 
 
 
-/* check height on body if anything breaks  */
+
 /* html, body, main{ 
     height: 100%
-}
+} 
+*/
 
-/* .mainContentArea margin */
 
-/* body {
-    padding
-    margin
-    border
-}
-/* The big issue is the main going under footer when I make browser small vertically */
+
+/* The big issue is the main going under footer when I make browser small vertically or the content not taking entire view height */
