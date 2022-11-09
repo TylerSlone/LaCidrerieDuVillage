@@ -9,4 +9,4 @@ The three features I have chosen to include are:
 3. A hide/show div located in ciders.html that shows the price of ciders when a specific element is clicked and hides when any other element is clicked.
 
 
-I have chosen to use the flexbox gap property in this project. https://caniuse.com/flexbox-gap# LaCidrerieDuVillage
+I have chosen to use the flexbox gap property in this project. https://caniuse.com/flexbox-gap#
