@@ -402,6 +402,22 @@ a {
 
 }
 
+/* cider hide/show div price */
+
+.priceInfo{
+    display: none;
+}
+.showPrice >i {
+    cursor: pointer;
+}
+.showPrice:focus ~ .priceInfo{
+    display: block;
+}
+
+.here {
+    font-weight: 600;
+}
+
 
 
 /* sticky footer test 
