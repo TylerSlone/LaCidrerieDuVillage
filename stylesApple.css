@@ -160,6 +160,9 @@ a {
     flex-direction: row;
     align-self: flex-start;
     display: none;
+    background-color: rgba(243, 193, 157, .4);
+    border-radius: 15px; 
+    margin-top: 65px;
 }
 
 .column-1 .leftNav ul li {
@@ -171,14 +174,15 @@ a {
 
 
 .column-1 .leftNav ul {
-    padding-left: 0%;
-    padding-top: 65px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .leftNav ul li {
     border: 2px black solid;
     margin-bottom: 15px;
     margin-left: 5px;
+    margin-right: 5px;
     border-radius: 5px;
     font-size: xx-large;
     text-align: center;
@@ -193,8 +197,9 @@ a {
 
 .leftNav ul li>a:hover {
     opacity: 1;
-    color: black;
-    font-weight: bolder;
+    color: rgb(233, 162, 173);
+    font-weight: 1000;
+    text-decoration:underline;
 }
 
 .column-2 {
@@ -204,8 +209,8 @@ a {
 }
 
 .bgHome {
-    background-image: url(./images/homeImg.PNG);
-    background-position: center;
+    background-image: url(./images/homeImgBG.PNG);
+    background-position: right;
 }
 
 .bgApples {
@@ -215,14 +220,13 @@ a {
 }
 
 .bgCiders {
-    background-image: url(./images/ciderBG2.png);
-    background-size: cover;
+    background-image: url(./images/ciderBG3.PNG);
     background-position: center;
+    background-size: cover;
 }
 
 .bgJuices {
-    background-image: url(./images/jamBG.PNG);
-    background-position: center;
+    background-image: url(./images/jamBG2.PNG);
     background-size: cover;
 }
 
@@ -419,15 +423,6 @@ a {
 }
 
 
-
-/* sticky footer test 
-footer{
-    position: fixed;
-    width: 100%;
-    bottom: 0%;
-}
-*/
-
 /* Media Queries */
 
 @media (min-width: 375px) {
@@ -476,15 +471,3 @@ footer{
     }
 
 }
-
-
-
-
-/* html, body, main{ 
-    height: 100%
-} 
-*/
-
-
-
-/* The big issue is the main going under footer when I make browser small vertically or the content not taking entire view height */
